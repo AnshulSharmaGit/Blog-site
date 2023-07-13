@@ -46,12 +46,6 @@ app.get("/", function(req, res){
     console.log(err);
   });
   
-  
-  
-  
-  
-  
-  
 });
 
 app.get("/about", function(req, res){
@@ -67,6 +61,8 @@ app.get("/compose", function(req, res){
 });
 
 app.post("/compose", function(req, res){
+ 
+ //to have previos version without db
   // const post = {
   //   title: req.body.postTitle,
   //   content: req.body.postBody
@@ -108,10 +104,6 @@ app.get("/posts/:postId", function(req, res){
   .catch(function (err) {
     console.log(err);
   });
-
-
-
-
 
 
   // posts.forEach(function(post){
